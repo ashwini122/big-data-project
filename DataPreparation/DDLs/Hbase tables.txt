@@ -1,0 +1,8 @@
+production_category hbase table creation
+==============================================================
+create 'production_category', 'prod_details'
+
+
+user_location hbase table creation
+=========================================================================
+create 'user_location', 'user_details'

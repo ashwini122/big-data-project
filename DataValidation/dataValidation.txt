@@ -1,0 +1,38 @@
+Rules checking on user_acitivity_excp table
+=======================================================================================
+
+Checking the data in user_activity_excp_r1.txt file,r2 & r3
+......................................................................
+
+hive -e "SELECT COUNT(*) FROM user_activity_excp WHERE rule_failed = 'R1'" > user_activity_excp_r1.txt
+hive -e "SELECT COUNT(*) FROM user_activity_excp WHERE rule_failed = 'R2'" > user_activity_excp_r2.txt
+hive -e "SELECT COUNT(*) FROM user_activity_excp WHERE rule_failed = 'R3'" > user_activity_excp_r3.txt
+
+
+
+
+Rules checking on user_info table
+=======================================================================================
+
+Checking the data in users_info_excp_r1.txt,r2 &r3
+...................................................................
+
+hive -e "SELECT COUNT(*) FROM users_info_excp WHERE rule_failed = 'R1'" > users_info_excp_r1.txt
+hive -e "SELECT COUNT(*) FROM users_info_excp WHERE rule_failed = 'R2'" > users_info_excp_r2.txt
+hive -e "SELECT COUNT(*) FROM users_info_excp WHERE rule_failed = 'R3'" > users_info_excp_r3.txt
+
+
+
+
+Checking the data in users_info_core table
+=====================================================================================
+hive -e "SELECT COUNT(*) FROM users_info_core" > users_info_core.txt
+
+
+Checking the data in products_info_excp_r1,r2 & r3
+.......................................................................
+
+hive -e "SELECT COUNT(*) FROM products_info_excp WHERE rule_failed = 'R1'" > products_info_excp_r1.txt
+hive -e "SELECT COUNT(*) FROM products_info_excp WHERE rule_failed = 'R2'" > products_info_excp_r2.txt
+hive -e "SELECT COUNT(*) FROM products_info_excp WHERE rule_failed = 'R3'" > products_info_excp_r3.txt
+hive -e "SELECT COUNT(*) FROM products_info_core" > products_info_core.txt
