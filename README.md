@@ -1,6 +1,6 @@
 # user-data-analysis.
 
-This project is mainly to investigate and analyze products and customer's behavior for an eCommerce company. The data received from the warehouse is mainly JSON  files and are mainly below three types of data files.
+This project is mainly to investigate and analyse products and customer's behavior for an eCommerce company. The data received from the warehouse is mainly JSON  files and are mainly below three types of data files.
 
       1.products_info_<timestamp>
       2.users_info_<timestamp>
